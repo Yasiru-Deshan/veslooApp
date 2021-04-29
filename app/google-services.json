@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "296390352130",
+    "project_id": "vesloo-ecommerceapp",
+    "storage_bucket": "vesloo-ecommerceapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:296390352130:android:b9b02cfbef9384500df61b",
+        "android_client_info": {
+          "package_name": "com.example.mad_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "296390352130-0oup1lg4t2k9ibfgjeuqb08c6us5bbpa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mad_project",
+            "certificate_hash": "4db7f805173d0c36fd0df015a9c99e83f3167625"
+          }
+        },
+        {
+          "client_id": "296390352130-3kugj92ogf7tgb6ibi6b0uc9v2asu74r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsCFdI3vKPzC2PQw16Dd4FjYOZNdZP7C8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "296390352130-3kugj92ogf7tgb6ibi6b0uc9v2asu74r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
