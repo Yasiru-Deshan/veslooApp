@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gardient"
+    android:orientation="vertical"
+    tools:context=".AddProduct"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-52dp">
+
+
+    <!--    <androidx.appcompat.widget.Toolbar-->
+    <!--        android:id="@+id/toolbar3"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="?attr/colorPrimary"-->
+    <!--        android:minHeight="?attr/actionBarSize"-->
+    <!--        android:theme="?attr/actionBarTheme"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.0"-->
+    <!--        app:title="Add Item"-->
+    <!--        app:titleTextColor="@color/design_default_color_on_primary"-->
+    <!--        app:titleMarginStart="50dp"-->
+    <!--        app:logo="@drawable/ic_baseline_arrow_back_24"-->
+    <!--        />-->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TwItemCode"
+                android:layout_width="117dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="15dp"
+                android:text="Item code"
+                android:textColor="#0E0D0D"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etCode"
+                android:layout_width="322dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/et_bg"
+                android:padding="16dp"
+                android:ems="10"
+                android:focusableInTouchMode="true"
+                android:hint="IC0023"
+                android:inputType="textPersonName"
+                android:textColor="#120C0C" />
+
+            <TextView
+                android:id="@+id/TwName"
+                android:layout_width="117dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="15dp"
+                android:text="Name"
+                android:textColor="#0E0D0D"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etProductName"
+                android:layout_width="322dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:padding="16dp"
+                android:background="@drawable/et_bg"
+                android:ems="10"
+                android:hint="Party Frock"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/TwPrice"
+                android:layout_width="117dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="15dp"
+                android:text="Price"
+                android:textColor="#0E0D0D"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etPrice"
+                android:layout_width="322dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:padding="16dp"
+                android:background="@drawable/et_bg"
+                android:ems="10"
+                android:hint="Rs.3400.00"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/TwQuantity"
+                android:layout_width="117dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="15dp"
+                android:text="Quantity"
+                android:textColor="#0E0D0D"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etQty"
+                android:layout_width="322dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:padding="16dp"
+                android:background="@drawable/et_bg"
+                android:ems="10"
+                android:hint="200"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/TwSupplier"
+                android:layout_width="117dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="15dp"
+                android:text="Supplier"
+                android:textColor="#0E0D0D"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etSupplier"
+                android:layout_width="322dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:padding="16dp"
+                android:background="@drawable/et_bg"
+                android:ems="10"
+                android:hint="Gflock"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/TwDescription"
+                android:layout_width="144dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:text="@string/description"
+                android:textColor="#0E0D0D"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etDescription"
+                android:layout_width="322dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:padding="16dp"
+                android:background="@drawable/et_bg"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="Size:M,Cotton"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/TwImage"
+                android:layout_width="144dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:text="Image"
+                android:textColor="#0E0D0D"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/img_btn"
+                android:layout_width="332dp"
+                android:layout_height="153dp"
+                android:layout_marginLeft="20dp"
+                android:contentDescription="TODO" />
+
+            <Button
+                android:id="@+id/add_product_btn"
+                android:layout_width="334dp"
+                android:layout_height="53dp"
+                android:layout_marginLeft="20dp"
+                app:backgroundTint="#4169E1"
+                android:text="@string/add_product" />
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="335dp"
+                android:layout_height="53dp"
+                android:layout_marginLeft="20dp"
+                app:backgroundTint="#4169E1"
+                android:text="@string/cancel" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
