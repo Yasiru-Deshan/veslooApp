@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewAdvertisement">
+
+    <ImageView
+        android:id="@+id/ad_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:contentDescription="@string/select_image"
+        android:src="@drawable/gardient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ad_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ad_image_view"
+        android:layout_marginVertical="5dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/sample_ad_title"
+        android:textColor="@color/black"
+        android:paddingVertical="10dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ad_discount_tag"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ad_image_view"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/ad_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ad_title"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"
+        android:text="@string/ad_desc_sample"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ad_image_view"
+        app:layout_constraintVertical_bias="0.401" />
+
+    <TextView
+        android:id="@+id/ad_discount_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ad_desc"
+        android:text="@string/ad_discount"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/goto_prd_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ad_image_view"
+        app:layout_constraintVertical_bias="0.779" />
+
+    <TextView
+        android:id="@+id/ad_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ad_desc"
+        android:layout_marginStart="4dp"
+        android:layout_toEndOf="@+id/ad_discount_tag"
+        android:text="@string/_10"
+        android:textColor="@color/black"
+
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/goto_prd_btn"
+        app:layout_constraintStart_toEndOf="@+id/ad_discount_tag"
+        app:layout_constraintTop_toBottomOf="@+id/ad_image_view"
+        app:layout_constraintVertical_bias="0.779" />
+
+    <ImageButton
+        android:id="@+id/ad_delete_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ad_discount"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="24dp"
+        android:layout_toEndOf="@+id/ad_update_btn"
+        android:contentDescription="@string/add_delete_button"
+        android:padding="12dp"
+        android:src="@drawable/ic_baseline_delete"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ad_update_btn" />
+
+    <ImageButton
+        android:id="@+id/ad_update_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ad_discount"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="@string/add_edit_button"
+        android:padding="12dp"
+        android:src="@drawable/ic_baseline_edit"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/goto_prd_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:background="@color/background_color"
+        android:text="@string/buy_this_item"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/ad_desc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ad_image_view"
+        app:layout_constraintVertical_bias="0.878" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
