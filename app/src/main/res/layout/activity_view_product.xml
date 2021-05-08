@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gardient"
+    tools:context=".ViewProduct">
+
+    <TextView
+        android:id="@+id/view_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/sample_product_name"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_image"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/view_product_price"
+        android:layout_width="293dp"
+        android:layout_height="36dp"
+        android:layout_margin="10dp"
+        android:text="@string/price_tag"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/lkr_tag"
+        app:layout_constraintTop_toBottomOf="@+id/product_image"
+        app:layout_constraintVertical_bias="0.101" />
+
+    <TextView
+        android:id="@+id/lkr_tag"
+        android:layout_width="52dp"
+        android:layout_height="35dp"
+        android:layout_margin="10dp"
+        android:text="@string/price_tag"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_image"
+        app:layout_constraintVertical_bias="0.102" />
+
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_width="407dp"
+        android:layout_height="283dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@tools:sample/backgrounds/scenic"
+        android:contentDescription="@string/list_product_image"/>
+
+    <TextView
+        android:id="@+id/view_product_details"
+        android:layout_width="360dp"
+        android:layout_height="89dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/sample_product_desc"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_product_name"
+        app:layout_constraintVertical_bias="0.429" />
+
+    <Button
+        android:id="@+id/goto_feedback"
+        android:layout_width="169dp"
+        android:layout_height="56dp"
+        app:backgroundTint="#4169E1"
+        android:text="@string/add_feedback"
+        android:textColor="@color/login_form_details"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_product_details"
+        app:layout_constraintVertical_bias="0.211" />
+
+    <Button
+        android:id="@+id/add_ad_btn"
+        android:layout_width="169dp"
+        android:layout_height="56dp"
+        app:backgroundTint="#4169E1"
+        android:text="@string/add_advertisment"
+        android:textColor="@color/login_form_details"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_product_details"
+        app:layout_constraintVertical_bias="0.211" />
+
+    <Button
+        android:id="@+id/view_item_feedback"
+        android:layout_width="169dp"
+        android:layout_height="56dp"
+        app:backgroundTint="#4169E1"
+        android:text="@string/view_feedbacks"
+        android:textColor="@color/login_form_details"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_product_details"
+        app:layout_constraintVertical_bias="0.211" />
+
+    <Button
+        android:id="@+id/view_item_feedback2"
+        android:layout_width="164dp"
+        android:layout_height="40dp"
+        android:background="@color/background_color"
+        android:text="@string/button"
+        android:textColor="@color/login_form_details"
+        app:backgroundTint="#4169E1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_product_details"
+        app:layout_constraintVertical_bias="0.688" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:paddingHorizontal="5dp"
+        android:layout_marginStart="12dp"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textStyle="bold"
+        android:text="@string/prd_by"
+        app:layout_constraintBottom_toTopOf="@+id/view_product_details"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lkr_tag"
+        app:layout_constraintVertical_bias="0.227" />
+
+    <TextView
+        android:id="@+id/prd_supplier_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="@string/product_supplier"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/view_product_details"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/view_product_price"
+        app:layout_constraintVertical_bias="0.209" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="12dp"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textStyle="bold"
+        android:text="@string/available_quantity"
+        android:paddingHorizontal="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/view_product_details"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lkr_tag"
+        app:layout_constraintVertical_bias="0.795" />
+
+    <TextView
+        android:id="@+id/prd_qty_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="@string/product_supplier"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/view_product_details"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/view_product_price"
+        app:layout_constraintVertical_bias="0.79" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
