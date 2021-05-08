@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/list_product_image_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/list_product_image"
+            android:src="@drawable/gardient" />
+
+        <TextView
+            android:id="@+id/product_list_prd_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/list_product_image_view"
+            android:text="@string/sample_product_name"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/product_list_prd_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_list_prd_name"
+            android:layout_toEndOf="@+id/list_product_image_view"
+            android:text="@string/sample_product_desc"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+
+            />
+
+        <TextView
+            android:id="@+id/product_list_prd_price_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_list_prd_details"
+            android:layout_marginEnd="4dp"
+            android:layout_toEndOf="@+id/list_product_image_view"
+            android:text="@string/price_tag"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/product_list_prd_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_list_prd_details"
+            android:layout_toEndOf="@+id/product_list_prd_price_tag"
+            android:text="@string/sample_price_prod"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+
+            />
+
+        <ImageButton
+            android:id="@+id/product_update_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_list_prd_price"
+            android:layout_toEndOf="@+id/product_add_ad_btn"
+            android:padding="12dp"
+            android:contentDescription="@string/product_edit_button"
+            android:src="@drawable/ic_baseline_edit"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/product_delete_btn"
+            android:visibility="gone"
+            android:padding="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_list_prd_price"
+            android:layout_toEndOf="@+id/product_update_btn"
+            android:contentDescription="@string/product_delete_button"
+            android:src="@drawable/ic_baseline_delete" />
+        <Button
+            android:id="@+id/product_add_ad_btn"
+            android:text="@string/add_advertisment"
+            android:visibility="gone"
+            android:background="@color/background_color"
+            android:paddingHorizontal="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_list_prd_price"
+            android:layout_toEndOf="@+id/list_product_image_view"
+            android:contentDescription="@string/product_delete_button"
+            android:src="@drawable/ic_baseline_delete" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
