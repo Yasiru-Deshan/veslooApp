@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddAdvertisement"
+    android:background="@drawable/gardient">
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/add_advertisment"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/for_ad"
+                    android:textColor="@color/black"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.016"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/prd_name"
+                    android:layout_width="369dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/sample_product_name"
+                    android:textColor="@color/black"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView9"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/ad_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:text="@string/advertisment_title"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/ad_title_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:autofillHints="@string/avurudu_promotion"
+                android:background="@drawable/et_bg"
+                android:ems="10"
+                android:hint="@string/avurudu_promotion"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/ad_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:text="@string/advertisement_description"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/ad_desc_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:autofillHints="@string/ad_desc_sample"
+                android:background="@drawable/et_bg"
+                android:ems="10"
+                android:gravity="top|start"
+                android:hint="@string/ad_desc_sample"
+                android:inputType="textMultiLine"
+                android:lines="6"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/ad_discount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:text="@string/ad_discount"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/ad_discount_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:autofillHints="@string/_10"
+                android:background="@drawable/et_bg"
+                android:ems="10"
+                android:hint="@string/_10"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/ad_image_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:text="@string/select_image"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/ad_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/select_image"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_img_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/select_image" />
+
+            <Button
+                android:id="@+id/btn_add_ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorAccent"
+                android:text="@string/add_advertisment"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/cancel_ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/cancel"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
