@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gardient"
+    android:orientation="vertical"
+    tools:context=".AddFeedback">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="@string/add_feedback_for"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/feedback_prd_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/sample_product_name"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/feedback_rating_tv"
+                android:layout_width="198dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="0dp"
+                android:padding="5dp"
+                android:text="@string/rate_this_product"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+            <RatingBar
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:stepSize="1"
+                />
+
+            <EditText
+                android:id="@+id/feedback_comment"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:autofillHints="@string/please_provide_a_comment"
+                android:background="@drawable/et_bg"
+                android:hint="@string/please_provide_a_comment"
+                android:inputType="textMultiLine"
+                android:padding="16dp" />
+
+            <Button
+                android:id="@+id/btn_add_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/colorPrimary"
+                android:padding="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="46dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/add_feedback"
+                android:textColor="#FFFFFF" />
+
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/colorPrimaryDark"
+
+                android:padding="14dp"
+                android:text="@string/cancel"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
